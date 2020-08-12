@@ -1,5 +1,3 @@
-/*  google font */
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
@@ -15,7 +13,19 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  /* temporary */
   background-color: #f3f3f3;
   overflow-x: hidden;
+}
+
+.body {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 20px;
+}
+
+@media (max-width: 600px) {
+  .body {
+    align-items: center;
+    flex-direction: column;
+  }
 }

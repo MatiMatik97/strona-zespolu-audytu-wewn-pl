@@ -8,8 +8,8 @@ const Header = () => {
       <div className="header__container">
         <img src={logo} alt="header__logo" className="header__logo" />
         <div className="header_titles">
-          <h1 className="header__title_large">Zespół audytu węwnętrznego</h1>
-          <h2 className="header__title_medium">Politechnika Lubelska</h2>
+          <h1 className="header__title-large">Zespół Audytu Węwnętrznego</h1>
+          <h2 className="header__title-medium">Politechnika Lubelska</h2>
         </div>
       </div>
       <hr className="header__line" />

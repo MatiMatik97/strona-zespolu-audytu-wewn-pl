@@ -1,3 +1,7 @@
+.header {
+    margin-bottom: 30px;
+}
+
 .header__container {
     display: flex;
     align-items: center;
@@ -21,38 +25,34 @@
     box-shadow: 0px 0px 5px 4px #d3d3d3;
 }
 
-.header__title_large {
+.header__title-large {
     font-size: 1.4rem;
 }
 
-.header__title_medium {
+.header__title-medium {
     font-size: 1.1rem;
 }
 
 .header__line {
-    margin: 0 5vh;
+    margin: 0px 5vh;
     border: 1px solid #d3d3d3;
     border-radius: 5px;
 }
 
 @media (max-width: 500px) {
     .header__logo {
-        min-width: 2vh;
-        max-width: 7vh;
-        object-fit: contain;
-        opacity: 0.9;
         border-radius: 0%;
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
         box-shadow: none;
     }
-    .header__title_large {
+    .header__title-large {
         font-size: 1rem;
     }
-    .header__title_medium {
+    .header__title-medium {
         font-size: 0.7rem;
     }
     .header__line {
-        margin: 0 1vh;
+        margin: 0px 1vh;
     }
 }
