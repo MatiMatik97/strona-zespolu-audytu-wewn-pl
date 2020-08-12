@@ -1,6 +1,6 @@
-/* Montserrat google font */
+/*  google font */
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -14,8 +14,8 @@ html {
 }
 
 body {
-  font-family: "Montserrat", serif;
+  font-family: 'Montserrat', sans-serif;
   /* temporary */
-  background-color: lightgray;
+  background-color: #f3f3f3;
   overflow-x: hidden;
 }
