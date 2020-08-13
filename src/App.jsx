@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -19,9 +20,10 @@ const App = () => {
             padding: "15px",
           }}
         >
-          <h2>Main</h2>
+          <h2>Strona Zespołu Audytu Wewnętrznego PL</h2>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

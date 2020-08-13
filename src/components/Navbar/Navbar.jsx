@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.css";
+import NavbarItem from "./NavbarItem";
 
 const Navbar = () => {
   return (
@@ -7,11 +8,9 @@ const Navbar = () => {
       <h1 className="navbar__title">Menu</h1>
       <hr className="navbar__line" />
       <ul className="navbar__list">
-        <li className="navbar__list-item">Pierwszy link</li>
-        <hr className="navbar__list-line" />
-        <li className="navbar__list-item">Drugi link</li>
-        <hr className="navbar__list-line" />
-        <li className="navbar__list-item">Trzeci link</li>
+        <NavbarItem text={"Pierwszy link"} withLineBelow={true} />
+        <NavbarItem text={"Drugi link"} withLineBelow={true} />
+        <NavbarItem text={"Trzeci link"} withLineBelow={false} />
       </ul>
     </div>
   );
