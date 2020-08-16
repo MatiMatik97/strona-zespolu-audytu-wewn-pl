@@ -1,10 +1,9 @@
 import React from "react";
 
-const NavbarItem = ({ text, withLineBelow }) => {
+const NavbarItem = ({ text }) => {
   return (
     <>
       <li className="navbar__list-item">{text}</li>
-      {withLineBelow && <hr className="navbar__list-line" />}
     </>
   );
 };

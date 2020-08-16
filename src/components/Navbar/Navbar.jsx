@@ -8,9 +8,9 @@ const Navbar = () => {
       <h1 className="navbar__title">Menu</h1>
       <hr className="navbar__line" />
       <ul className="navbar__list">
-        <NavbarItem text={"Pierwszy link"} withLineBelow={true} />
-        <NavbarItem text={"Drugi link"} withLineBelow={true} />
-        <NavbarItem text={"Trzeci link"} withLineBelow={false} />
+        <NavbarItem text={"Pierwszy link"} />
+        <NavbarItem text={"Drugi link"} />
+        <NavbarItem text={"Trzeci link"} />
       </ul>
     </div>
   );
