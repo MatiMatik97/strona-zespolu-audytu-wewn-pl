@@ -5,12 +5,14 @@ const FooterDisplay = () => {
     <div className="footer">
       <hr className="footer__line" />
       <div className="footer__container">
-        <div className="footer__content">
-          <h2 className="footer__text">Stopka</h2>
-          <h3 className="footer__timer" id="footer__timer">
-            Timer
-          </h3>
-        </div>
+        <h2 className="footer__text">
+          Politechnika Lubelska
+          <br />
+          ul. Nadbystrzycka 38 D 20 – 618 Lublin
+        </h2>
+        <h3 className="footer__timer" id="footer__timer">
+          00:00:00
+        </h3>
       </div>
     </div>
   );

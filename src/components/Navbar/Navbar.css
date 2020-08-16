@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #e5e2e2;
+    background-color: #D7E1EA;
     border-radius: 5px;
 }
 
@@ -36,7 +36,7 @@
     margin: 0px 5%;
     max-width: 300px;
     padding: 3px 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: all 0.2s ease-in-out;
 }
 
@@ -46,9 +46,10 @@
 
 .navbar__list-item:hover, .navbar__list-item:focus {
     cursor: pointer;
-    background-color: #dfdddd;
+    background-color: #CAD7E3;
     padding-left: 13px;
     padding-right: 7px;
+    letter-spacing: 0.2px;
 }
 
 .navbar__list-line {
@@ -66,10 +67,18 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .navbar {
+        align-self: center;
         width: 70vw;
         margin-bottom: 15px;
+    }
+    .navbar__list-item {
+        text-align: center;
+        padding: 3px 0px;
+    }
+    .navbar__list-item:hover, .navbar__list-item:focus {
+        padding: 3px 0px;
     }
 }
 
