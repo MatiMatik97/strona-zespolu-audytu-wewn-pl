@@ -19,19 +19,19 @@
     opacity: 0.9;
 }
 
-.header__title-large {
+.header__titleLarge {
     font-size: 1.4rem;
 }
 
-.header__title-medium {
+.header__titleMedium {
     font-size: 1.1rem;
 }
 
 @media (max-width: 700px) {
-    .header__title-large {
+    .header__titleLarge {
         font-size: 1rem;
     }
-    .header__title-medium {
+    .header__titleMedium {
         font-size: 0.7rem;
     }
 }
