@@ -1,11 +1,11 @@
 import React from "react";
-import "./Main.css";
+import "./HomePage.css";
+import UniversalPage from "../UniversalPage/UniversalPage";
 
-const Main = () => {
-  return (
-    <div className="main">
+const HomePage = () => {
+  const component = (
+    <div className="home">
       <h2>Strona Zespołu Audytu Wewnętrznego PL</h2>
-      <br />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cumque
         voluptatum voluptatibus officia ex repellat aspernatur quaerat
@@ -16,6 +16,8 @@ const Main = () => {
       </p>
     </div>
   );
+
+  return <UniversalPage component={component} />;
 };
 
-export default Main;
+export default HomePage;

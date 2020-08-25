@@ -15,9 +15,10 @@ const Footer = () => {
   };
 
   useEffect(() => {
-    setInterval(displayTimer, 1000);
+    const timerInterval = setInterval(displayTimer, 1000);
     displayTimer();
 
+    return () => clearInterval(timerInterval);
     // eslint-disable-next-line
   }, []);
 

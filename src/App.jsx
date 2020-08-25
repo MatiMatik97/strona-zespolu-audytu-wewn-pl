@@ -1,19 +1,27 @@
 import React from "react";
 import "./App.css";
-import Header from "./components/Header/Header";
-import Navbar from "./components/Navbar/Navbar";
-import Footer from "./components/Footer/Footer";
-import Main from "./components/Main/Main";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { pagesLinks } from "./utils/links";
+import HomePage from "./pages/HomePage/HomePage";
 
 const App = () => {
+  const { HOME_PAGE, TEST_PAGE } = pagesLinks;
+
   return (
     <div className="app">
-      <Header />
-      <div className="body">
-        <Navbar />
-        <Main />
-      </div>
-      <Footer />
+      <Router>
+        <Switch>
+          {/* TEST PAGE */}
+          <Route path={TEST_PAGE.link}>
+            <h1>Inna stronka</h1>
+          </Route>
+
+          {/* HOME PAGE */}
+          <Route path={HOME_PAGE.link}>
+            <HomePage />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 };

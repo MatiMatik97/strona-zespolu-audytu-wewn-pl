@@ -1,0 +1,18 @@
+.body {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 20px;
+}
+
+.main {
+    width: 80vw;
+    margin: 0px 10px;
+    padding: 15px;
+}
+
+@media (max-width: 700px) {
+    .body {
+        align-items: center;
+        flex-direction: column;
+    }
+}
