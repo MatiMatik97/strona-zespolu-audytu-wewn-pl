@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { pagesLinks } from "./utils/links";
@@ -7,10 +7,6 @@ import CompositionPage from "./pages/CompositionPage/CompositionPage";
 
 const App = () => {
   const { HOME_PAGE, COMPOSITION_PAGE } = pagesLinks;
-
-  useEffect(() => {
-    document.title = pagesLinks.HOME_PAGE.title;
-  }, []);
 
   return (
     <div className="app">

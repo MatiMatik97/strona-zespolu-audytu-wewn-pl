@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./CompositionPage.css";
+import { pagesLinks } from "../../utils/links";
 import UniversalPage from "../UniversalPage/UniversalPage";
 import PersonCard from "../../components/PersonCard/PersonCard";
 
@@ -34,6 +35,10 @@ const CompositionPage = () => {
       </div>
     </div>
   );
+
+  useEffect(() => {
+    document.title = pagesLinks.COMPOSITION_PAGE.title;
+  }, []);
 
   return <UniversalPage component={compositionPageComponent} />;
 };
