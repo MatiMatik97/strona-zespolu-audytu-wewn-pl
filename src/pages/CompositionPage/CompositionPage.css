@@ -1,0 +1,18 @@
+.composition {
+    margin-bottom: 300px;
+}
+
+.composition h2 {
+    text-align: center;
+}
+
+.composition__team {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 700px) {
+    .composition {
+        font-size: 0.8rem;
+    }
+}

@@ -1,10 +1,14 @@
+export const BASE_TITLE = "Zespół Audytu Wewnętrznego PL";
+
 export const pagesLinks = {
     HOME_PAGE: {
         link: "/",
-        title: "Strona główna"
+        text: "Strona główna",
+        title: `${BASE_TITLE} | Strona główna`
     },
-    TEST_PAGE: {
-        link: "/test",
-        title: "Strona testowa"
+    COMPOSITION_PAGE: {
+        link: "/sklad-osobowy",
+        text: "Skład osobowy",
+        title: `${BASE_TITLE} | Skład osobowy`
     }
 }

@@ -47,7 +47,7 @@
     border-bottom: 1px solid #d1d0d0;
 }
 
-.navbar__listItem:hover, .navbar__listItem:focus {
+.navbar__listItem:hover {
     cursor: pointer;
     background-color: #CAD7E3;
     padding-left: 13px;

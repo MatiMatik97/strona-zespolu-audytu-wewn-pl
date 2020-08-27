@@ -3,21 +3,30 @@ import "./HomePage.css";
 import UniversalPage from "../UniversalPage/UniversalPage";
 
 const HomePage = () => {
-  const component = (
+  const homePageComponent = (
     <div className="home">
-      <h2>Strona Zespołu Audytu Wewnętrznego PL</h2>
+      <h2>Zespół Audytu Wewnętrznego PL</h2>
+      <h4>Definicja audytu wewnętrznego</h4>
+      <h5>
+        Art. 272. (Ustawa z dnia 27 sierpnia 2009 r. o finansach publicznych)
+      </h5>
+
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cumque
-        voluptatum voluptatibus officia ex repellat aspernatur quaerat
-        distinctio est voluptate sint pariatur enim harum ab modi, maxime nisi?
-        Maiores accusantium quae unde, aliquam in nobis voluptatem aspernatur
-        repudiandae amet cumque necessitatibus debitis dolorum iure sequi
-        ratione aliquid eum odio earum.
+        <strong>1.</strong> Audyt wewnętrzny jest działalnością niezależną i
+        obiektywną, której celem jest wspieranie ministra kierującego działem
+        lub kierownika jednostki w realizacji celów i zadań przez systematyczną
+        ocenę kontroli zarządczej oraz czynności doradcze.
+      </p>
+
+      <p>
+        <strong>2.</strong> Ocena, o której mowa w ust. 1, dotyczy w
+        szczególności adekwatności, skuteczności i efektywności kontroli
+        zarządczej w dziale administracji rządowej lub jednostce.
       </p>
     </div>
   );
 
-  return <UniversalPage component={component} />;
+  return <UniversalPage component={homePageComponent} />;
 };
 
 export default HomePage;

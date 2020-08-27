@@ -1,0 +1,41 @@
+.personCard {
+    width: 350px;
+    margin-top: 5px;
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #d1d0d0;
+    border-radius: 5px;
+    background-color: #f3f3f3;
+}
+
+.personCard:hover {
+    background-color: #ececec;
+}
+
+.personCard__row {
+    display: flex;
+    margin: 5px 0;
+    align-items: center;
+}
+
+.personCard__row .MuiSvgIcon-root {
+    margin-right: 5px;
+}
+
+.personCard__row a {
+    text-decoration: none;
+    color: black;
+}
+
+.personCard__row a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+    .personCard {
+        font-size: 0.8rem;
+    }
+    .personCard__row .MuiSvgIcon-root {
+        font-size: 1.1rem;
+    }
+}

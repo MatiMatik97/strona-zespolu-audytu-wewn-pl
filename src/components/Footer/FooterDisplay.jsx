@@ -8,7 +8,7 @@ const FooterDisplay = () => {
         <h2 className="footer__text">
           Politechnika Lubelska
           <br />
-          ul. Nadbystrzycka 38 D 20 – 618 Lublin
+          ul. Nadbystrzycka 38D, 20 – 618 Lublin
         </h2>
         <h3 className="footer__timer" id="footer__timer">
           00:00:00

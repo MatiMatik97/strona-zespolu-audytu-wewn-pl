@@ -7,6 +7,17 @@
     margin-bottom: 20px;
 }
 
+.home h5 {
+    margin-top: 5px;
+}
+
 .home p {
     text-align: justify;
+    margin-top: 5px;
+}
+
+@media (max-width: 700px) {
+    .home {
+        font-size: 0.8rem;
+    }
 }
