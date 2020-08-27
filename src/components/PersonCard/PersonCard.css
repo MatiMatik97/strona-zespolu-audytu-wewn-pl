@@ -18,7 +18,7 @@
     align-items: center;
 }
 
-.personCard__row .MuiSvgIcon-root {
+.personCard__row>.MuiSvgIcon-root {
     margin-right: 5px;
 }
 

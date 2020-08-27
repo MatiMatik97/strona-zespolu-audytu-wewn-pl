@@ -11,14 +11,12 @@ const HomePage = () => {
       <h5>
         Art. 272. (Ustawa z dnia 27 sierpnia 2009 r. o finansach publicznych)
       </h5>
-
       <p>
         <strong>1.</strong> Audyt wewnętrzny jest działalnością niezależną i
         obiektywną, której celem jest wspieranie ministra kierującego działem
         lub kierownika jednostki w realizacji celów i zadań przez systematyczną
         ocenę kontroli zarządczej oraz czynności doradcze.
       </p>
-
       <p>
         <strong>2.</strong> Ocena, o której mowa w ust. 1, dotyczy w
         szczególności adekwatności, skuteczności i efektywności kontroli

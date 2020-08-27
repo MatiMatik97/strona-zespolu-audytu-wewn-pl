@@ -4,15 +4,21 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { pagesLinks } from "./utils/links";
 import HomePage from "./pages/HomePage/HomePage";
 import CompositionPage from "./pages/CompositionPage/CompositionPage";
+import FunctionsPage from "./pages/FunctionsPage/FunctionsPage";
 
 const App = () => {
-  const { HOME_PAGE, COMPOSITION_PAGE } = pagesLinks;
+  const { HOME_PAGE, COMPOSITION_PAGE, FUNCTIONS_PAGE } = pagesLinks;
 
   return (
     <div className="app">
       <Router>
         <Switch>
-          {/* TEST PAGE */}
+          {/* FUNCTIONS PAGE */}
+          <Route path={FUNCTIONS_PAGE.link}>
+            <FunctionsPage />
+          </Route>
+
+          {/* COMPOSITION PAGE */}
           <Route path={COMPOSITION_PAGE.link}>
             <CompositionPage />
           </Route>

@@ -1,0 +1,19 @@
+.functions {
+    margin-bottom: 300px;
+}
+
+.functions h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.functions h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 700px) {
+    .functions {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,27 @@
+.listRow {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 5px;
+    background-color: #f3f3f3;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.listRow:hover {
+    background-color: #ececec;
+}
+
+.listRow>.MuiSvgIcon-root {
+    margin-right: 5px;
+}
+
+.listRow p {
+    text-align: justify;
+}
+
+@media (max-width: 700px) {
+    .listRow .MuiSvgIcon-root {
+        font-size: 1.1rem;
+    }
+}

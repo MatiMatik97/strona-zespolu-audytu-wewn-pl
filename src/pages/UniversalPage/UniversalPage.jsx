@@ -9,7 +9,9 @@ const UniversalPage = ({ component }) => {
     <>
       <Header />
       <div className="body">
-        <Navbar />
+        <div className="sidebar">
+          <Navbar />
+        </div>
         <div className="main">{component}</div>
       </div>
       <Footer />
