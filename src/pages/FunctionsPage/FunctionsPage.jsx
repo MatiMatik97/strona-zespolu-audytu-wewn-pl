@@ -10,7 +10,7 @@ const FunctionsPage = () => {
   const functionsPageComponent = (
     <div className="functions">
       <h2>Zespół Audytu Wewnętrznego PL</h2>
-      <h4>Funkcje i cel audytu wewnętrznego</h4>
+      <h4>Funkcje audytu wewnętrznego</h4>
 
       <div className="functions__duties">
         <ListRow
@@ -40,8 +40,8 @@ const FunctionsPage = () => {
         />
       </div>
 
-      <h4>Funkcje i cel audytu wewnętrznego</h4>
-      
+      <h4>Cele audytu wewnętrznego</h4>
+
       <div className="functions__goals">
         <ListRow
           icon={<GolfCourseIcon />}

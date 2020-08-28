@@ -17,7 +17,7 @@ const CompositionPage = () => {
       <div className="composition__team">
         <PersonCard
           name={"dr inż. Bogna SAWICKA"}
-          phone={"(81) 538.48.75"}
+          phone={"(81) 538-48-75"}
           mail={"b.sawicka@pollub.pl"}
           maps={linkToGoogleMaps}
           address={"pokój nr 6, budynek stołówki (40A)"}
@@ -26,7 +26,7 @@ const CompositionPage = () => {
 
         <PersonCard
           name={"mgr inż. Karolina GAŁĄZKA"}
-          phone={"(81) 538.48.75"}
+          phone={"(81) 538-48-75"}
           mail={"k.galazka@pollub.pl"}
           maps={linkToGoogleMaps}
           address={"pokój nr 6, budynek stołówki (40A)"}

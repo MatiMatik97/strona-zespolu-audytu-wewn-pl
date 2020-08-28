@@ -16,8 +16,17 @@
     margin-right: 5px;
 }
 
-.listRow p {
+.listRow p, .listRow a {
     text-align: justify;
+}
+
+.listRow a {
+    text-decoration: none;
+    color: black;
+}
+
+.listRow a:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 700px) {

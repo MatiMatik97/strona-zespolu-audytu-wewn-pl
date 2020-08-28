@@ -5,40 +5,16 @@ import PhoneIcon from "@material-ui/icons/Phone";
 import MailIcon from "@material-ui/icons/Mail";
 import HomeWorkIcon from "@material-ui/icons/HomeWork";
 import AccessTimeIcon from "@material-ui/icons/AccessTime";
+import ListRow from "../ListRow/ListRow";
 
 const PersonCard = ({ name, phone, mail, maps, address, time }) => {
   return (
     <div className="personCard">
-      <div className="personCard__row">
-        <PersonIcon />
-        <p>{name}</p>
-      </div>
-
-      <div className="personCard__row">
-        <PhoneIcon />
-        <p>{phone}</p>
-      </div>
-
-      <div className="personCard__row">
-        <MailIcon />
-        <p>
-          <a href={`mailto:${mail}`}>{mail}</a>
-        </p>
-      </div>
-
-      <div className="personCard__row">
-        <HomeWorkIcon />
-        <p>
-          <a target="_blank" rel="noopener noreferrer" href={maps}>
-            {address}
-          </a>
-        </p>
-      </div>
-
-      <div className="personCard__row">
-        <AccessTimeIcon />
-        <p>{time}</p>
-      </div>
+      <ListRow icon={<PersonIcon />} text={name} />
+      <ListRow icon={<PhoneIcon />} text={phone} />
+      <ListRow icon={<MailIcon />} text={mail} link={`mailto:${mail}`} />
+      <ListRow icon={<HomeWorkIcon />} text={address} link={maps} />
+      <ListRow icon={<AccessTimeIcon />} text={time} />
     </div>
   );
 };

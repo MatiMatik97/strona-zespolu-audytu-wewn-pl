@@ -1,4 +1,4 @@
-export const BASE_TITLE = "Zespół Audytu Wewnętrznego PL";
+const BASE_TITLE = "Zespół Audytu Wewnętrznego PL";
 
 export const pagesLinks = {
     HOME_PAGE: {
@@ -15,5 +15,10 @@ export const pagesLinks = {
         link: "/funkcje-i-cel",
         text: "Funkcje i cel",
         title: `${BASE_TITLE} | Funkcje i cel`
+    },
+    DOWNLOAD_PAGE: {
+        link: "/do-pobrania",
+        text: "Do pobrania",
+        title: `${BASE_TITLE} | Do pobrania`
     }
 }
