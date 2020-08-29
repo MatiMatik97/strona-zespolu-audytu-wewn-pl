@@ -56,7 +56,11 @@ const FormPage = () => {
       <h2>Zespół Audytu Wewnętrznego PL</h2>
       <h4>Formularz</h4>
 
-      <Form onSubmit={onSubmit} submitStatus={submitStatus} />
+      <Form
+        onSubmit={onSubmit}
+        submitStatus={submitStatus}
+        setSubmitStatus={setSubmitStatus}
+      />
     </div>
   );
 
