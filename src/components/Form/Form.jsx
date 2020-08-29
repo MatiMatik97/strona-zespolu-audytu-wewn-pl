@@ -72,7 +72,7 @@ const Form = ({ onSubmit, submitStatus, setSubmitStatus }) => {
 
       {/* MESSAGE */}
       <div className="form__row textarea">
-        <MessageIcon />
+        <MessageIcon className="form__rowIcon" />
         <div className="form__inputContainer">
           <p className="form__label">Wiadomość</p>
           <textarea
@@ -80,7 +80,7 @@ const Form = ({ onSubmit, submitStatus, setSubmitStatus }) => {
               errors.message ? "form__input--error" : ""
             }`}
             type="text"
-            rows="5"
+            rows="4"
             name="message"
             ref={register({ required: true })}
             defaultValue="wiadomosc"

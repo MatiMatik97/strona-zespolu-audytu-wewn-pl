@@ -15,6 +15,11 @@
     background-color: #f3f3f3;
 }
 
+.form__rowIcon {
+   align-self: flex-start;
+   margin-top: 15px;
+}
+
 .form__row.textarea {
     border-radius: 30px;
 }
