@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./HomePage.css";
-import { pagesLinks } from "../../utils/links";
+import { pages } from "../../utils/links";
 import UniversalPage from "../UniversalPage/UniversalPage";
 
 const HomePage = () => {
@@ -26,7 +26,7 @@ const HomePage = () => {
   );
 
   useEffect(() => {
-    document.title = pagesLinks.HOME_PAGE.title;
+    document.title = pages.HOME_PAGE.title;
   }, []);
 
   return <UniversalPage component={homePageComponent} />;

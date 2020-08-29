@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-import { pagesLinks } from "../../utils/links";
+import { pages } from "../../utils/links";
 
 const Navbar = () => {
   const {
@@ -9,7 +9,8 @@ const Navbar = () => {
     COMPOSITION_PAGE,
     FUNCTIONS_PAGE,
     DOWNLOAD_PAGE,
-  } = pagesLinks;
+    FORM_PAGE,
+  } = pages;
 
   return (
     <div className="navbar">
@@ -31,6 +32,10 @@ const Navbar = () => {
 
         <Link className="navbar__listItem" to={DOWNLOAD_PAGE.link}>
           {DOWNLOAD_PAGE.text}
+        </Link>
+
+        <Link className="navbar__listItem" to={FORM_PAGE.link}>
+          {FORM_PAGE.text}
         </Link>
       </div>
     </div>

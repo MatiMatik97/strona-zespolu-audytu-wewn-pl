@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./FunctionsPage.css";
-import { pagesLinks } from "../../utils/links";
+import { pages } from "../../utils/links";
 import UniversalPage from "../UniversalPage/UniversalPage";
 import WorkIcon from "@material-ui/icons/Work";
 import GolfCourseIcon from "@material-ui/icons/GolfCourse";
@@ -61,7 +61,7 @@ const FunctionsPage = () => {
   );
 
   useEffect(() => {
-    document.title = pagesLinks.FUNCTIONS_PAGE.title;
+    document.title = pages.FUNCTIONS_PAGE.title;
   }, []);
 
   return <UniversalPage component={functionsPageComponent} />;

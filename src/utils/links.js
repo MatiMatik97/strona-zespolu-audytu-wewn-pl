@@ -1,6 +1,6 @@
 const BASE_TITLE = "Zespół Audytu Wewnętrznego PL";
 
-export const pagesLinks = {
+export const pages = {
     HOME_PAGE: {
         link: "/",
         text: "Strona główna",
@@ -20,5 +20,10 @@ export const pagesLinks = {
         link: "/do-pobrania",
         text: "Do pobrania",
         title: `${BASE_TITLE} | Do pobrania`
+    },
+    FORM_PAGE: {
+        link: "/formularz",
+        text: "Formularz",
+        title: `${BASE_TITLE} | Formularz`
     }
 }

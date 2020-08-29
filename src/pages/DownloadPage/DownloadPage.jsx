@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./DownloadPage.css";
-import { pagesLinks } from "../../utils/links";
+import { pages } from "../../utils/links";
 import UniversalPage from "../UniversalPage/UniversalPage";
 import ListRow from "../../components/ListRow/ListRow";
 import LinkIcon from "@material-ui/icons/Link";
@@ -82,7 +82,7 @@ const DownloadPage = () => {
   );
 
   useEffect(() => {
-    document.title = pagesLinks.DOWNLOAD_PAGE.title;
+    document.title = pages.DOWNLOAD_PAGE.title;
   }, []);
 
   return <UniversalPage component={downloadPageComponent} />;
