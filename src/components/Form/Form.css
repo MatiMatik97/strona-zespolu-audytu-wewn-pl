@@ -48,7 +48,7 @@
 }
 
 .form__container textarea::-webkit-resizer {
-    background: url(https://image.flaticon.com/icons/svg/268/268277.svg);
+    background: url('https://image.flaticon.com/icons/svg/268/268277.svg');
 }
 
 .form__row>.MuiSvgIcon-root {
@@ -61,9 +61,10 @@
 }
 
 .form__inputContainer::before {
-    content: '*' !important;
+    content: '*';
     position: absolute;
     color: red;
+    margin-top: 5px;
     margin-left: -10px;
 }
 
