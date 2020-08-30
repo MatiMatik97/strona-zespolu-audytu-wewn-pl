@@ -11,8 +11,13 @@
     align-items: center;
     padding: 5px 15px;
     border: 1px solid #d1d0d0;
-    border-radius: 100px;
+    border-radius: 30px;
     background-color: #f3f3f3;
+    transition: background-color 200ms ease-in-out;
+}
+
+.form__row:hover, .form__row:hover .form__input {
+    background-color: #ececec;
 }
 
 .form__rowIcon {
@@ -80,6 +85,7 @@
     outline: none;
     font-size: 1.5rem;
     padding: 5px;
+    transition: background-color 200ms ease-in-out;
 }
 
 .form__input--error {

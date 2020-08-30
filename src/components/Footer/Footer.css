@@ -8,6 +8,7 @@
     margin-bottom: 15px;
     border: 1px solid #d3d3d3;
     border-radius: 5px;
+    margin-top: 200px;
 }
 
 .footer__container {
@@ -37,6 +38,7 @@
         width: 90vw;
         margin: 0px 5vw;
         margin-bottom: 15px;
+        margin-top: 100px;
     }
     .footer__text {
         font-size: 0.9rem;
