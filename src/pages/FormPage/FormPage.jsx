@@ -15,12 +15,14 @@ const CORS_PROXY = "https://cors-anywhere.herokuapp.com/";
 
 const FormPage = () => {
   const [submitStatus, setSubmitStatus] = useState({
+    sending: false,
     status: "",
     message: "",
   });
 
   const onSubmit = async (data) => {
     setSubmitStatus({
+      sending: true,
       status: "",
       message: "",
     });
@@ -37,14 +39,20 @@ const FormPage = () => {
         // console.log(response);
 
         setSubmitStatus({
+          sending: false,
           status: "SUCCESS",
           message: "Wysłano wiadomość.",
         });
+
+        // [...document.querySelectorAll(".form__input")].map(
+        //   (input) => (input.value = "")
+        // );
       })
       .catch((error) => {
         // console.error(error);
 
         setSubmitStatus({
+          sending: false,
           status: "FAIL",
           message: "Nie udało się wysłać wiadomości.",
         });
@@ -55,6 +63,7 @@ const FormPage = () => {
     <div className="form">
       <h2>Zespół Audytu Wewnętrznego PL</h2>
       <h4>Formularz</h4>
+      <h5>* - pole wymagane</h5>
 
       <Form
         onSubmit={onSubmit}

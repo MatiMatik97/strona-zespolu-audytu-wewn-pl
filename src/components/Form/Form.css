@@ -16,8 +16,8 @@
 }
 
 .form__rowIcon {
-   align-self: flex-start;
-   margin-top: 15px;
+    align-self: flex-start;
+    margin-top: 15px;
 }
 
 .form__row.textarea {
@@ -39,7 +39,11 @@
 
 .form__container textarea {
     font-family: inherit;
-    resize: none;
+    resize: vertical;
+}
+
+.form__container textarea::-webkit-resizer {
+    background: url(https://image.flaticon.com/icons/svg/268/268277.svg);
 }
 
 .form__row>.MuiSvgIcon-root {
@@ -51,7 +55,19 @@
     padding-right: 10px;
 }
 
+.form__inputContainer::before {
+    content: '*' !important;
+    position: absolute;
+    color: red;
+    margin-left: -10px;
+}
+
+.form__inputContainer--notRequired::before {
+    display: none;
+}
+
 .form__label {
+    color: #a5a5a5;
     margin-left: 5px;
     font-size: 0.8rem;
 }

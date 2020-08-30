@@ -22,7 +22,7 @@ const Form = ({ onSubmit, submitStatus, setSubmitStatus }) => {
             type="text"
             name="name"
             ref={register({ required: true })}
-            defaultValue="imie i nazwisko"
+            // defaultValue="imie i nazwisko"
           />
           {errors.name && (
             <p className="form__error">Uzupełnij wymagane pole</p>
@@ -41,11 +41,14 @@ const Form = ({ onSubmit, submitStatus, setSubmitStatus }) => {
             }`}
             type="text"
             name="email"
-            ref={register({ required: true })}
-            defaultValue="e mail"
+            ref={register({
+              required: true,
+              pattern: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+            })}
+            // defaultValue="test@s"
           />
           {errors.email && (
-            <p className="form__error">Uzupełnij wymagane pole</p>
+            <p className="form__error">Podaj prawidłowy adres e-mail</p>
           )}
         </div>
       </div>
@@ -53,7 +56,7 @@ const Form = ({ onSubmit, submitStatus, setSubmitStatus }) => {
       {/* PHONE */}
       <div className="form__row">
         <PhoneIcon />
-        <div className="form__inputContainer">
+        <div className="form__inputContainer form__inputContainer--notRequired">
           <p className="form__label">Telefon</p>
           <input
             className={`form__input ${
@@ -61,11 +64,11 @@ const Form = ({ onSubmit, submitStatus, setSubmitStatus }) => {
             }`}
             type="text"
             name="phone"
-            ref={register({ required: true })}
-            defaultValue="telefon"
+            ref={register({ pattern: /^[\d() +-]+$/ })}
+            // defaultValue="2313121231"
           />
           {errors.phone && (
-            <p className="form__error">Uzupełnij wymagane pole</p>
+            <p className="form__error">Podaj prawidłowy numer telefonu</p>
           )}
         </div>
       </div>
@@ -83,7 +86,7 @@ const Form = ({ onSubmit, submitStatus, setSubmitStatus }) => {
             rows="4"
             name="message"
             ref={register({ required: true })}
-            defaultValue="wiadomosc"
+            // defaultValue="wiadomosc przykladowa"
           />
           {errors.message && (
             <p className="form__error">Uzupełnij wymagane pole</p>
@@ -95,27 +98,17 @@ const Form = ({ onSubmit, submitStatus, setSubmitStatus }) => {
         className="form__button"
         variant="contained"
         type="submit"
+        disabled={submitStatus.sending}
         onClick={() =>
           setSubmitStatus({
+            sending: false,
             status: "",
             message: "",
           })
         }
       >
-        WYŚLIJ
+        {submitStatus.sending ? "WYSYŁANIE..." : "WYŚLIJ"}
       </Button>
-
-      {/* <button
-        type="submit"
-        onClick={() =>
-          setSubmitStatus({
-            status: "",
-            message: "",
-          })
-        }
-      >
-        Zaloguj
-      </button> */}
 
       {submitStatus.status === "SUCCESS" && (
         <p className="form__submit form__submit--success">
