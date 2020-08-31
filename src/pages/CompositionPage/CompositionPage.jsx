@@ -20,8 +20,8 @@ const CompositionPage = () => {
           phone={"(81) 538-48-75"}
           mail={"b.sawicka@pollub.pl"}
           maps={linkToGoogleMaps}
-          address={"pokój nr 6, budynek stołówki (40A)"}
-          time={"Poniedziałek - Piątek, 08:00 - 15:00"}
+          address={"pokój nr 6, Budynek Stołówki (40A)"}
+          time={"Poniedziałek - Piątek, 07:00 - 15:00"}
         />
 
         <PersonCard
@@ -29,8 +29,8 @@ const CompositionPage = () => {
           phone={"(81) 538-48-75"}
           mail={"k.galazka@pollub.pl"}
           maps={linkToGoogleMaps}
-          address={"pokój nr 6, budynek stołówki (40A)"}
-          time={"Poniedziałek - Piątek, 08:00 - 15:00"}
+          address={"pokój nr 6, Budynek Stołówki (40A)"}
+          time={"Poniedziałek - Piątek, 07:00 - 15:00"}
         />
       </div>
     </div>
